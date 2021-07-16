@@ -1,5 +1,3 @@
-"use strict";
-
 const list = document.querySelectorAll('li.item');
 console.log(`В списке ${list.length} категории.`);
 
