@@ -17,10 +17,9 @@ const images = [
 ];
 
 const ulEl = document.querySelector('#gallery');
-images.forEach(el => {
-  ulEl.insertAdjacentHTML(
-    'beforeEnd',
-    `<li><img src = "${el.url}" alt = "${el.alt}"  width = "150" height = "100" /></li>`,
-  );
+const addGalleryListEl = images.map(el => {
+  const addGalleryListElImg = `<li class="gallery__item"><img src="${el.url}" alt="${el.alt}" width=200 height=150></li>`;
+  return addGalleryListElImg;
 });
-
+ulEl.insertAdjacentHTML("beforeend", addGalleryListEl.join(' '));
+ulEl.setAttribute("style", "list-style:none; display: flex; justify-content: space-around;")
