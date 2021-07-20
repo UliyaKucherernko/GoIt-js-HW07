@@ -21,3 +21,4 @@ const addGalleryListEl = images.map(el => {
   return addGalleryListElImg;
 });
 galleryList.insertAdjacentHTML("beforeend", addGalleryListEl.join(' '));
+galleryList.setAttribute("style", "list-style:none; display: flex; justify-content: space-around;")
