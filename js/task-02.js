@@ -12,4 +12,4 @@ const foodIngredients = ingredients.forEach(ingredient => {
   items.innerHTML = ingredient;
   ulList.append(items)  
 });
-
+console.log(foodIngredients);
