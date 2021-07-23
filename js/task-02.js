@@ -2,9 +2,9 @@ const ingredients = ['Картошка','Грибы','Чеснок','Помид�
 
 let ulList = document.getElementById("ingredients");
 const foodIngredients = ingredients.map(ingredient => {
-let items = document.createElement("li");
-items.innerHTML = ingredient;
-return items
+let item = document.createElement("li");
+item.innerHTML = ingredient;
+return item
 
 });
 
